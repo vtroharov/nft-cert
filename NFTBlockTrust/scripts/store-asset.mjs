@@ -8,9 +8,9 @@ const API_KEY = process.env.NFT_STORAGE_API_KEY
 async function storeAsset() {
    const client = new NFTStorage({ token: API_KEY })
    const metadata = await client.store({
-       name: 'DJScheppert@Rabbits',
-       description: 'Michael Scheppert live video playing at Rabbits Eat Lettuce Festival 2021',
-       animation_url: 'ipfs://bafybeifyw4k4o5sdbup2v7zyqojpsws5aduq5gownshhq5vesu7zfisxdu',
+       name: 'abc',
+       description: 'xxx',
+       animation_url: 'ipfs://',
        image: new File(
            [await fs.promises.readFile('assets/Preview.png')],
            'Preview.png',
