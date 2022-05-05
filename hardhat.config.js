@@ -7,7 +7,7 @@ const {
   ROPSTEN_API_URL,
   RINKENBY_API_URL,
   POLYGON_API_URL,
-  MUMBAI_API_KEY,
+  MUMBAI_API_URL,
   } = process.env;
 
 const {
@@ -22,7 +22,7 @@ module.exports = {
   networks: {
     hardhat: {},
     PolygonMumbai: {
-      url: MUMBAI_API_KEY,
+      url: MUMBAI_API_URL,
       accounts: [PRIVATE_KEY]
     },
     Polygon: {
