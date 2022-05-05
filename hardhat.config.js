@@ -11,11 +11,7 @@ const {
   } = process.env;
 
 const {
-  ETHEREUM_PRIVATE_KEY,
-  ROPSTEN_PRIVATE_KEY,
-  RINKENBY_PRIVATE_KEY,
-  POLYGON_PRIVATE_KEY,
-  MUMBAI_PRIVATE_KEY
+  PRIVATE_KEY
 } = process.env;
 
 module.exports = {
@@ -27,23 +23,23 @@ module.exports = {
     hardhat: {},
     PolygonMumbai: {
       url: MUMBAI_API_KEY,
-      accounts: [MUMBAI_PRIVATE_KEY]
+      accounts: [PRIVATE_KEY]
     },
     Polygon: {
       url: POLYGON_API_URL,
-      accounts: [POLYGON_PRIVATE_KEY]
+      accounts: [PRIVATE_KEY]
     },
     rinkenby: {
       url: RINKENBY_API_URL,
-      accounts: [`0x${RINKENBY_PRIVATE_KEY}`]
+      accounts: [`0x${PRIVATE_KEY}`]
     },
     ropsten: {
       url: ROPSTEN_API_URL,
-      accounts: [`0x${ROPSTEN_PRIVATE_KEY}`]
+      accounts: [`0x${PRIVATE_KEY}`]
     },
     mainnet: {
       url: ETHEREUM_API_URL,
-      accounts: [`0x${ETHEREUM_PRIVATE_KEY}`]
+      accounts: [`0x${PRIVATE_KEY}`]
     }
   },
 };
