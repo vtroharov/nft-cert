@@ -8,6 +8,12 @@ Repository for Blocktrust Project Julian 20 NFTs
 2. Open the project in preferred IDE
 3. Run `npm install` to install dependencies
 
+## Tools/Accounts you need for this project
+1. NFT.Storage API https://nft.storage/
+2. MetaMask Wallet https://metamask.io/
+3. Setup your wallet for different testnets: https://devtonight.com/posts/metamask-testnet-wallet-setup-for-blockchain-development
+4. Alchemy https://dashboard.alchemyapi.io/
+
 ## Environment variables
 Rationale: We can help with setting up the project by providing the template for the `.env` file and asking users to hide it from git. 
 Other ways to achieve is keep the template in the `README` or have `example.env` and ask users to run `cp example.env .env`
