@@ -6,6 +6,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
+import "./standards/ERC2981PerToken.sol";
 
 /**
  * @dev Contract module which provides a basic access control mechanism, where
@@ -20,14 +21,14 @@ import "@openzeppelin/contracts/utils/Counters.sol";
  * the owner.
  */
 
-contract NoBurnToken is ERC721URIStorage, Ownable {
+contract NoBurnToken is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalties {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdCounter;
 
     constructor() ERC721("NoBurnToken", "THC") {}
-    
-  /**
-     * @dev Mints `tokenId` and transfers it to `to`.
+
+    /**
+       * @dev Mints `tokenId` and transfers it to `to`.
      *
      * WARNING: Usage of _mint method is discouraged, use {_safeMint} whenever possible
      *
@@ -38,14 +39,19 @@ contract NoBurnToken is ERC721URIStorage, Ownable {
      *
      * Emits a {Transfer} event.
      */
-    function safeMint(address to, string memory uri) public onlyOwner {
+    function safeMint(address to, string memory uri, address royaltyRecipient, uint256 royaltyValue) public onlyOwner {
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
+
+        if (royaltyValue > 0) {
+            _setTokenRoyalty(tokenId, royaltyRecipient, royaltyValue);
+        }
+
         _setTokenURI(tokenId, uri);
     }
-     /**
-     * @dev Safely transfers `tokenId` token from `from` to `to`.
+    /**
+    * @dev Safely transfers `tokenId` token from `from` to `to`.
      *
      * Requirements:
      *
@@ -57,7 +63,7 @@ contract NoBurnToken is ERC721URIStorage, Ownable {
      *
      * Emits a {Transfer} event.
      */
-       function transferFrom(
+    function transferFrom(
         address from,
         address to,
         uint256 tokenId
@@ -69,5 +75,15 @@ contract NoBurnToken is ERC721URIStorage, Ownable {
         _transfer(from, to, tokenId);
     }
 
-    
+    /// @inheritdoc	ERC165
+    function supportsInterface(bytes4 interfaceId)
+    public
+    view
+    virtual
+    override(ERC721, ERC2981Base)
+    returns (bool)
+    {
+        return super.supportsInterface(interfaceId);
+    }
+
 }
