@@ -63,7 +63,7 @@ contract NoBurnToken is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalties {
      *
      * Emits a {Transfer} event.
      */
-    function transferFrom(
+    function safeTransferFrom(
         address from,
         address to,
         uint256 tokenId
