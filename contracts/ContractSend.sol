@@ -6,6 +6,8 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
+import "hardhat/console.sol";
+
 import "./standards/ERC2981PerToken.sol";
 
 /**
@@ -25,7 +27,7 @@ contract NoBurnToken is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalties {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdCounter;
 
-    constructor() ERC721("NoBurnToken", "THC") {}
+    constructor() ERC721("PalosExpensiveNFTs", "PEN") {}
 
     /**
        * @dev Mints `tokenId` and transfers it to `to`.
@@ -50,6 +52,22 @@ contract NoBurnToken is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalties {
 
         _setTokenURI(tokenId, uri);
     }
+    /**
+    * @dev Mints batch of n number of NFTs to specified address
+    */
+    function mintToAddressBatch(address to, string[] memory uri, address royaltyRecipient, uint256 royaltyValue) external onlyOwner {
+        for (uint i=0; i < uri.length; i++) {
+            console.log(uri[i]);
+            safeMint(to, uri[i],royaltyRecipient, royaltyValue);
+        }
+    }
+
+
+    string _contractURI = "https://ipfs.io/bafyreiav2nr2hwqkkvxkuag6pv2orfjn4p6nunx2kw3xv7uhckz4yzqn4a/metadata.json";
+    function contractURI() public view returns (string memory) {
+    return _contractURI;
+
+}
     /**
     * @dev Safely transfers `tokenId` token from `from` to `to`.
      *
