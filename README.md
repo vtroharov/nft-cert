@@ -24,7 +24,9 @@ Keep in mind, there is a risk with accidentally pushing the `.env` file to the r
    * `PRIVATE_KEY` - **Be Careful** :warning: Do not expose :warning: Private key for your wallet.
    * `PUBLIC_KEY` - wallet address
    * `*_API_URL` - URLs for corresponding networks
-   *  `NFT_STORAGE_API_KEY` - API KEY
+   * `NFT_STORAGE_API_KEY` - key for nft.storage
+   * `ETHERSCAN_API_KEY` - key for etherscan.io
+   * `ETHERSCAN_API_URL` - url for etherscan api
 3. Run the codebase as you wish
 
 P.S. Non-test networks can be expensive
@@ -35,6 +37,10 @@ Let git know about the file, stash local changes, pull the latest remote, handle
 2. `git stash .env`
 3. `git pull origin/main`
 4. `git update-index --skip-worktree .env`
+
+## Verify contract code on etherscan.io
+1. Set your `ETHERSCAN_API_KEY` in `.env`
+2. Run `npx hardhat verify --network rinkeby <contract_address>`
 
 ## Running the project
 `node scripts/mint-nft.js`
