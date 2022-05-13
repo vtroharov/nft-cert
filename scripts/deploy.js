@@ -1,5 +1,5 @@
 async function main() {
-    const MyToken = await ethers.getContractFactory("NoBurnToken")
+    const MyToken = await ethers.getContractFactory("<$ContractName>")
     
     // Start deployment, returning a promise that resolves to a contract object
     const nft = await MyToken.deploy()

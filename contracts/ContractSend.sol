@@ -5,9 +5,6 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
-
-import "hardhat/console.sol";
-
 import "./standards/ERC2981PerToken.sol";
 
 /**
@@ -23,11 +20,12 @@ import "./standards/ERC2981PerToken.sol";
  * the owner.
  */
 
-contract NoBurnToken is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalties {
+contract RingoStarr is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalties {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdCounter;
+    uint private availableNFTs = 0;
  
-    constructor() ERC721("PaloBatchMinting", "PBM") {}
+    constructor() ERC721("Ringo Starr", "BTL") {}
 
     /**
        * @dev Mints `tokenId` and transfers it to `to`.
@@ -42,10 +40,17 @@ contract NoBurnToken is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalties {
      * Emits a {Transfer} event.
      */
 
+/**
+       * @dev .
+     *
+     * WARNING: Added a restriction of 20 Tokens to the safeMint function
+     *
+     */
     function safeMint(address to, string memory uri, address royaltyRecipient, uint256 royaltyValue) public onlyOwner {
         uint256 tokenId = _tokenIdCounter.current();
         _exists(tokenId);
         _tokenIdCounter.increment();
+        require(tokenId < 20);
         _safeMint(to, tokenId);
 
         if (royaltyValue > 0) {
@@ -59,16 +64,18 @@ contract NoBurnToken is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalties {
     */
     function mintToAddressBatch(address to, string[] memory uri, address royaltyRecipient, uint256 royaltyValue) external onlyOwner {
         for (uint i=0; i < uri.length; i++) {
-            console.log(uri[i]);
             safeMint(to, uri[i],royaltyRecipient, royaltyValue);
         }
     }
 
+    /**
+    * @dev .
+     * _contractURI is for the OpenSea contract level metadata
+     */
 
-    string _contractURI = "ipfs://bafyreic77pvmymxitax26pll3zzly2rozaccucqxhgzbd3jix7ukjztmu4/metadata.json";
+    string _contractURI = "ipfs://bafyreieptfh72555fuoh2nxmbsq7bd77g4nbt3624rnxowhwppp6gs6na4/metadata.json";
     function contractURI() public view returns (string memory) {
     return _contractURI;
-
 }
     /**
     * @dev Safely transfers `tokenId` token from `from` to `to`.

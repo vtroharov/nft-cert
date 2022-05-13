@@ -1,11 +1,12 @@
-const CONTRACT_ADDRESS = "0x30F874B10a055b7fbC8fefbE7fB26109b19907A6"
-const META_DATA_URL = "ipfs://bafyreicojgw4jufgokscocvf2fwnf5qzq5edift53ytqovqnp4dc2hwyvu/metadata.json"
+const CONTRACT_ADDRESS = "<$SmartContract Address HASH>"
+const META_DATA_URL = "ipfs://metadata.json"
 
 async function mintNFT(contractAddress, metaDataURL) {
-   const MyToken = await ethers.getContractFactory("MyToken")
-   const to = "0x3faa320cd767e845d56909789ed4ba0a7dc1d405"
-   await MyToken.attach(contractAddress).safeMint(to, metaDataURL)
+   const ContractSend = await ethers.getContractFactory("<$ContractName>")
+   const to = "<$Receiver>"
+   await ContractSend.attach(contractAddress).safeMint(to, metaDataURL, "<$Royalty Receiver>", $Royalty_Amount)
    console.log("NFT minted to: ", to)
+   console.log(META_DATA_URL);
 }
 
 mintNFT(CONTRACT_ADDRESS, META_DATA_URL)
