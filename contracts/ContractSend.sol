@@ -26,8 +26,8 @@ import "./standards/ERC2981PerToken.sol";
 contract NoBurnToken is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalties {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdCounter;
-
-    constructor() ERC721("PalosExpensiveNFTs", "PEN") {}
+ 
+    constructor() ERC721("PaloBatchMinting", "PBM") {}
 
     /**
        * @dev Mints `tokenId` and transfers it to `to`.
@@ -41,8 +41,10 @@ contract NoBurnToken is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalties {
      *
      * Emits a {Transfer} event.
      */
+
     function safeMint(address to, string memory uri, address royaltyRecipient, uint256 royaltyValue) public onlyOwner {
         uint256 tokenId = _tokenIdCounter.current();
+        _exists(tokenId);
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
 
@@ -63,7 +65,7 @@ contract NoBurnToken is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalties {
     }
 
 
-    string _contractURI = "https://ipfs.io/bafyreiav2nr2hwqkkvxkuag6pv2orfjn4p6nunx2kw3xv7uhckz4yzqn4a/metadata.json";
+    string _contractURI = "ipfs://bafyreic77pvmymxitax26pll3zzly2rozaccucqxhgzbd3jix7ukjztmu4/metadata.json";
     function contractURI() public view returns (string memory) {
     return _contractURI;
 
