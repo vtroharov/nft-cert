@@ -1,4 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-etherscan");
 
 require('dotenv').config();
 
@@ -8,6 +9,7 @@ const {
   RINKENBY_API_URL,
   POLYGON_API_URL,
   MUMBAI_API_URL,
+  ETHERSCAN_API_KEY,
   } = process.env;
 
 const {
@@ -29,7 +31,7 @@ module.exports = {
       url: POLYGON_API_URL,
       accounts: [PRIVATE_KEY]
     },
-    rinkenby: {
+    rinkeby: {
       url: RINKENBY_API_URL,
       accounts: [`0x${PRIVATE_KEY}`]
     },
@@ -41,6 +43,10 @@ module.exports = {
       url: ETHEREUM_API_URL,
       accounts: [`0x${PRIVATE_KEY}`]
     }
+  },
+
+  etherscan: {
+    apiKey: ETHERSCAN_API_KEY
   },
 };
 
