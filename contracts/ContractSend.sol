@@ -20,12 +20,16 @@ import "./standards/ERC2981PerToken.sol";
  * the owner.
  */
 
-contract RingoStarr is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalties {
+contract ContractName000000 is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalties {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdCounter;
     uint private availableNFTs = 0;
+
+    /**
+    * @dev Mints NFT
+    */
  
-    constructor() ERC721("Ringo Starr", "BTL") {}
+    constructor() ERC721("Collection Name", "CLN") {}
 
     /**
        * @dev Mints `tokenId` and transfers it to `to`.
@@ -73,7 +77,7 @@ contract RingoStarr is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalties {
      * _contractURI is for the OpenSea contract level metadata
      */
 
-    string _contractURI = "ipfs://bafyreieptfh72555fuoh2nxmbsq7bd77g4nbt3624rnxowhwppp6gs6na4/metadata.json";
+    string _contractURI = "ipfs://metadata.json";
     function contractURI() public view returns (string memory) {
     return _contractURI;
 }

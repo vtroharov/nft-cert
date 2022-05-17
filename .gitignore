@@ -70,8 +70,12 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-#.env
+.env
 #.env.test
 
 # JetBrains config files
 .idea/
+
+# Metadata files
+meta_uri.json
+meta_uri_copy.json

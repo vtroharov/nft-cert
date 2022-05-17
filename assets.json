@@ -1,0 +1,16 @@
+[
+    {
+        "image": "test_asset.png",
+        "animation_url": "test_asset.mp4",
+        "name": "Test File 1",
+        "description": "**Test File 1** \n\nThis is a test asset for NFT Creation",
+        "external_url": "https://www.testasset.com"     
+    },
+    {
+        "image": "test_asset.png",
+        "animation_url": "test_asset.mp4",
+        "name": "Test File 2",
+        "description": "**Test File 2** \n\nThis is a test asset for NFT Creation",
+        "external_url": "https://www.testasset.com"     
+    }
+]
