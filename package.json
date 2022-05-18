@@ -23,6 +23,7 @@
     "@openzeppelin/contracts": "^4.6.0",
     "dotenv": "^16.0.0",
     "mime": "^3.0.0",
-    "nft.storage": "^6.2.0"
+    "nft.storage": "^6.2.0",
+    "yargs": "^17.5.1"
   }
 }
