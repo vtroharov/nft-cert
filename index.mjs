@@ -2,8 +2,7 @@ import yargs from 'yargs';
 import {hideBin} from 'yargs/helpers';
 import hardhat from 'hardhat';
 
-import {mintToAddressBatch} from "./scripts/mint-batch-nft-send.mjs";
-import {mintNft} from "./scripts/mint-nft-send.mjs";
+import {mintNft, mintToAddressBatch} from "./scripts/mint-nft-send.mjs";
 import {verifyNft} from "./scripts/verify-nfts.mjs";
 import {deploy} from "./scripts/deploy.mjs";
 import {store} from "./scripts/store-assets.mjs";
