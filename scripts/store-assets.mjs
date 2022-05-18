@@ -1,4 +1,4 @@
-import { NFTStorage, File } from 'nft.storage';
+import { File } from 'nft.storage';
 import fs from 'fs';
 import mime from 'mime';
 import dotenv from 'dotenv';
@@ -6,15 +6,12 @@ dotenv.config();
 
 let data = [];
 
-const API_KEY = process.env.NFT_STORAGE_API_KEY
 const DIR = "./assets/"
 
 let rawdata = fs.readFileSync('./assets.json');
 let assets = JSON.parse(rawdata);
 
-async function storeAsset() {
-    const client = new NFTStorage({ token: API_KEY })
-
+export const storeAsset = async function (client) {
     // Upload each file with metadata from assets.json file and media files in assets
     
     for (let i = 0; i < assets.length; i++) {
@@ -37,10 +34,9 @@ async function storeAsset() {
       }
       const metadata = await client.store(nft)
       console.log('Metadata URI: ', metadata.url)
-      var obj = {
+      data.push({
         meta: metadata.url
-      }
-      data.push(obj)
+      })
     }
 
     // Write all metadata to a file to be used for minting
@@ -49,9 +45,3 @@ async function storeAsset() {
       console.log('Complete');
     })
 }
-
-storeAsset()
-.catch((error) => {
-  console.error(error);
-  process.exit(1);
-});

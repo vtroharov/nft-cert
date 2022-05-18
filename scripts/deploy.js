@@ -1,19 +1,5 @@
-require('dotenv').config();
-
-const CONTRACT_NAME = process.env.CONTRACT_NAME;
-
-async function main() {
-    const MyToken = await ethers.getContractFactory(CONTRACT_NAME)
-    
-    // Start deployment, returning a promise that resolves to a contract object
-    const nft = await MyToken.deploy()
+export const deploy = async function (token) {
+    const nft = await token.deploy()
     await nft.deployed()
     console.log(nft.address)
 }
-
-main()
-.then(() => process.exit(0))
-.catch((error) => {
-    console.error(error)
-    process.exit(1)
-})
