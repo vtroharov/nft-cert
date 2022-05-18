@@ -71,7 +71,7 @@ jobs:
         run: node scripts/store-assets.mjs
 
       - name: Copy Assets
-        run: cp ./meta_uri.json meta_uri_copy.json
+        run: cp ./meta_uri.json meta_uri.json
 
       - name: Get Total assets
         run: echo "total=`jq '. | length' meta_uri.json`" >> $GITHUB_ENV
