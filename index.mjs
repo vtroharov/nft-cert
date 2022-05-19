@@ -23,14 +23,13 @@ async function main() {
     const {nftStorageClient, web3Client, contractDetails} = setup(hardhat.config.networks);
 
     const etherContract = await hardhat.ethers.getContractFactory(contractDetails.name)
-    const deploy1 = await deploy(etherContract)
-    const mintToAddressBatch1 = mintToAddressBatch(etherContract, contractDetails, metadata, royalty);
+    const contractAddress = await deploy(etherContract)
 
     const metadata = jsonParser(await readFile(filePath.metadataUri))
     const royalty = jsonParser(await readFile(filePath.assetsContract))
 
+    const wallet = mintToAddressBatch(etherContract, contractDetails, metadata, royalty);
     const resultMetadata = mintNft(etherContract, contractDetails, metadata, royalty);
-    await writeFile(filePath.metadataUri, JSON.stringify(resultMetadata))
 
     const assets = jsonParser(await readFile(filePath.assets))
     const verifyNft1 = verifyNft(web3Client, contractDetails, assets);
