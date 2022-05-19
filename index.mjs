@@ -8,7 +8,6 @@ import {verifyNft} from "./scripts/verify-nfts.mjs";
 import {deploy} from "./scripts/deploy.mjs";
 import {store} from "./scripts/store-assets.mjs";
 import {readFile} from "./scripts/helpers/file-handler.mjs";
-import {writeFile} from "./scripts/helpers/file-handler.mjs";
 import {jsonParser} from "./scripts/helpers/json-parser.mjs";
 import {setup} from "./scripts/helpers/project-setup.mjs";
 
