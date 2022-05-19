@@ -1,26 +1,14 @@
-import {File} from "nft.storage";
-
-export const createNft = ({name, description, external_url}, {imageFile, imageFileName, imageFileType}, animation) => {
+export const createNft = ({name, description, external_url}, image, animation) => {
     return {
-        image: new File(
-            imageFile,
-            imageFileName,
-            {type: imageFileType}
-        ),
-        ...(animation ? {
-            animation_url: new File(
-                animation.file,
-                animation.fileName,
-                {type: animation.fileType}
-            )
-        } : null),
+        image: image,
+        ...(animation ? {animation_url: animation} : null),
         name,
         description,
         external_url
     }
 }
 
-export const createContract = ({image, imageName, imageType}, {
+export const createContract = (image, {
     name,
     description,
     external_link,
@@ -28,11 +16,7 @@ export const createContract = ({image, imageName, imageType}, {
     fee_recipient
 }) => {
     return {
-        image: new File(
-            image,
-            imageName,
-            {type: imageType}
-        ),
+        image,
         name,
         description,
         external_link,
