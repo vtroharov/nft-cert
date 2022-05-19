@@ -13,9 +13,6 @@ import {jsonParser} from "./scripts/helpers/json-parser.mjs";
 import {setup} from "./scripts/helpers/project-setup.mjs";
 
 async function main() {
-
-    setup()
-
     const filePath = {
         assetsContract: './assets_contract.json',
         metadataUri: './meta_uri.json',
@@ -23,8 +20,7 @@ async function main() {
     }
 
     const argv = yargs(hideBin(process.argv)).argv;
-    console.log(argv)
-    const {nftStorageClient, web3Client, contractDetails} = setup();
+    const {nftStorageClient, web3Client, contractDetails} = setup(hardhat.config.networks);
 
     const etherContract = await hardhat.ethers.getContractFactory(contractDetails.name)
     const deploy1 = await deploy(etherContract)

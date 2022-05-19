@@ -3,22 +3,42 @@ require("@nomiclabs/hardhat-etherscan");
 
 require('dotenv').config();
 
-let { NETWORK_API_URL, PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env;
-
-if (!NETWORK_API_URL.includes('polygon')) {
-  PRIVATE_KEY = `0x${PRIVATE_KEY}`
-}
+const {
+  ETHEREUM_API_URL,
+  ROPSTEN_API_URL,
+  RINKEBY_API_URL,
+  POLYGON_API_URL,
+  MUMBAI_API_URL,
+  ETHERSCAN_API_KEY,
+  PRIVATE_KEY
+} = process.env;
 
 module.exports = {
   solidity: "0.8.6",
 
-  defaultNetwork: "all",
+  defaultNetwork: "rinkeby",
 
   networks: {
     hardhat: {},
-    all: {
-      url: NETWORK_API_URL,
+    PolygonMumbai: {
+      url: MUMBAI_API_URL,
       accounts: [PRIVATE_KEY]
+    },
+    Polygon: {
+      url: POLYGON_API_URL,
+      accounts: [PRIVATE_KEY]
+    },
+    rinkeby: {
+      url: RINKEBY_API_URL,
+      accounts: [`0x${PRIVATE_KEY}`]
+    },
+    ropsten: {
+      url: ROPSTEN_API_URL,
+      accounts: [`0x${PRIVATE_KEY}`]
+    },
+    mainnet: {
+      url: ETHEREUM_API_URL,
+      accounts: [`0x${PRIVATE_KEY}`]
     }
   },
   etherscan: {

@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import {NFTStorage} from "nft.storage";
 import {createAlchemyWeb3} from "@alch/alchemy-web3";
 
-export const setup = () => {
+export const setup = (networks) => {
     dotenv.config();
 
     const {
@@ -11,11 +11,11 @@ export const setup = () => {
         MINT_TO_WALLET,
         CONTRACT_META,
         NFT_STORAGE_API_KEY,
-        NETWORK_API_URL
+        HARDHAT_NETWORK
     } = process.env;
 
     const nftStorageClient = new NFTStorage({token: NFT_STORAGE_API_KEY});
-    const web3Client = createAlchemyWeb3(NETWORK_API_URL);
+    const web3Client = createAlchemyWeb3(networks[HARDHAT_NETWORK].url);
 
     const contractDetails = {
         name: CONTRACT_NAME,
