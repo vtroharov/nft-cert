@@ -20,11 +20,11 @@ module.exports = {
 
   networks: {
     hardhat: {},
-    PolygonMumbai: {
+    mumbai: {
       url: MUMBAI_API_URL,
       accounts: [PRIVATE_KEY]
     },
-    Polygon: {
+    polygon: {
       url: POLYGON_API_URL,
       accounts: [PRIVATE_KEY]
     },

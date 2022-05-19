@@ -1,5 +1,5 @@
 # Spearmint
-Repository for Blocktrust Project Julian 20 NFTs
+BlockTrust project to deploy and verify contracts and mint NFTs
 
 ## Setting up the project
 
@@ -13,6 +13,7 @@ Repository for Blocktrust Project Julian 20 NFTs
 2. MetaMask Wallet https://metamask.io/
 3. Setup your wallet for different testnets: https://devtonight.com/posts/metamask-testnet-wallet-setup-for-blockchain-development
 4. Alchemy https://dashboard.alchemyapi.io/
+5. Get Etherscan API key https://etherscan.io/apis
 
 ## Environment variables
 Rationale: We can help with setting up the project by providing the template for the `.env` file and asking users to hide it from git. 
@@ -27,6 +28,7 @@ Keep in mind, there is a risk with accidentally pushing the `.env` file to the r
    * `NFT_STORAGE_API_KEY` - key for nft.storage
    * `ETHERSCAN_API_KEY` - key for etherscan.io
    * `ETHERSCAN_API_URL` - url for etherscan api
+   * `HARDHAT_NETWORK` - blockchain network [`mainnet`, `rinkeby`, `ropsten`, `polygon`, `mumbai`]
 3. Run the codebase as you wish
 
 P.S. Non-test networks can be expensive
@@ -43,4 +45,4 @@ Let git know about the file, stash local changes, pull the latest remote, handle
 2. Run `npx hardhat verify --network rinkeby <contract_address>`
 
 ## Running the project
-`node scripts/mint-nft.js`
+`node index.mjs --<parameters>`
