@@ -1,9 +1,172 @@
 [
   {
-    "image": "hairy_nipples.png",
-    "animation_url": "hairy_nipples.mp4",
-    "name": "Hairy Nipples",
-    "description": "**Hairy Nipples** \n\nGlorious moment when Battletroll got Hairy Nipples",
-    "external_url": "https://portal.battlefield.com/"
+    "image": "art.jpg",
+    "animation_url": "",
+    "name": "Art",
+    "description": "**Art** \n\nSome amazing art",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "city.jpg",
+    "animation_url": "",
+    "name": "City",
+    "description": "**City** \n\nSome amazing city",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "digital-art.jpg",
+    "animation_url": "",
+    "name": "Digital Art",
+    "description": "**Digital Art** \n\nSome amazing digital art",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "dragon.jpg",
+    "animation_url": "",
+    "name": "Dragon",
+    "description": "**Dragon** \n\nSome amazing dragon",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Epic"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "fantasy.jpg",
+    "animation_url": "",
+    "name": "Fantasy",
+    "description": "**Fantasy** \n\nSome amazing fantasy",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "ink.jpg",
+    "animation_url": "",
+    "name": "Ink",
+    "description": "**Ink** \n\nSome amazing ink",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "poseidon.jpg",
+    "animation_url": "",
+    "name": "Poseidon",
+    "description": "**Poseidon** \n\nSome amazing Poseidon",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Legendary"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "sailing-ship.jpg",
+    "animation_url": "",
+    "name": "Sailing Ship",
+    "description": "**Sailing Ship** \n\nSome amazing Sailing Ship",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "spring-flowers.jpg",
+    "animation_url": "",
+    "name": "Spring Flowers",
+    "description": "**Spring Flowers** \n\nSome amazing Spring Flowers",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Rare"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "texture.jpg",
+    "animation_url": "",
+    "name": "Texture",
+    "description": "**Texture** \n\nSome amazing Texture",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
   }
 ]

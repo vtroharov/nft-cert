@@ -1,10 +1,10 @@
 {
-  "name": "Battlefield 2 Collection",
-  "description": "Collection of differnt moments of Battlefield 2 gameplay.",
-  "image": "battlefield_2.png",
-  "external_url": "https://portal.battlefield.com/",
+  "name": "Art Collection",
+  "description": "Collection of Art NFTs created by various artists",
+  "image": "texture.jpg",
+  "external_url": "https://my-awesome-url.com/",
   "seller_fee_basis_points": 1000,
-  "fee_recipient": "0xd47F639fdB3501211d67c9EB008f8A51D66897A3",
-  "contract_name": "BattlefiledMoments",
-  "collection_token": "BF2"
+  "fee_recipient": "0x3350C6332eA76700FF1fCe2963589E350325C211",
+  "contract_name": "ArtCollection0000",
+  "collection_token": "ART"
 }
