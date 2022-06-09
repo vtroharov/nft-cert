@@ -2,8 +2,8 @@
   {
     "image": "art.jpg",
     "animation_url": "",
-    "name": "Art",
-    "description": "**Art** \n\nSome amazing art",
+    "name": "Art 1 of 5",
+    "description": "**Art** \n\nSome amazing art 1 of 5",
     "external_url": "https://my-awesome-url.com/",
     "attributes": [
       {
@@ -19,8 +19,8 @@
   {
     "image": "city.jpg",
     "animation_url": "",
-    "name": "City",
-    "description": "**City** \n\nSome amazing city",
+    "name": "City 1 of 5",
+    "description": "**City** \n\nSome amazing city 1 of 5",
     "external_url": "https://my-awesome-url.com/",
     "attributes": [
       {
@@ -36,8 +36,8 @@
   {
     "image": "digital-art.jpg",
     "animation_url": "",
-    "name": "Digital Art",
-    "description": "**Digital Art** \n\nSome amazing digital art",
+    "name": "Digital Art 1 of 5",
+    "description": "**Digital Art** \n\nSome amazing digital art 1 of 5",
     "external_url": "https://my-awesome-url.com/",
     "attributes": [
       {
@@ -53,8 +53,8 @@
   {
     "image": "dragon.jpg",
     "animation_url": "",
-    "name": "Dragon",
-    "description": "**Dragon** \n\nSome amazing dragon",
+    "name": "Dragon 1 of 5",
+    "description": "**Dragon** \n\nSome amazing dragon 1 of 5",
     "external_url": "https://my-awesome-url.com/",
     "attributes": [
       {
@@ -70,8 +70,8 @@
   {
     "image": "fantasy.jpg",
     "animation_url": "",
-    "name": "Fantasy",
-    "description": "**Fantasy** \n\nSome amazing fantasy",
+    "name": "Fantasy 1 of 5",
+    "description": "**Fantasy** \n\nSome amazing fantasy 1 of 5",
     "external_url": "https://my-awesome-url.com/",
     "attributes": [
       {
@@ -87,8 +87,8 @@
   {
     "image": "ink.jpg",
     "animation_url": "",
-    "name": "Ink",
-    "description": "**Ink** \n\nSome amazing ink",
+    "name": "Ink 1 of 5",
+    "description": "**Ink** \n\nSome amazing ink 1 of 5",
     "external_url": "https://my-awesome-url.com/",
     "attributes": [
       {
@@ -104,8 +104,8 @@
   {
     "image": "poseidon.jpg",
     "animation_url": "",
-    "name": "Poseidon",
-    "description": "**Poseidon** \n\nSome amazing Poseidon",
+    "name": "Poseidon 1 of 5",
+    "description": "**Poseidon** \n\nSome amazing Poseidon 1 of 5",
     "external_url": "https://my-awesome-url.com/",
     "attributes": [
       {
@@ -121,8 +121,8 @@
   {
     "image": "sailing-ship.jpg",
     "animation_url": "",
-    "name": "Sailing Ship",
-    "description": "**Sailing Ship** \n\nSome amazing Sailing Ship",
+    "name": "Sailing Ship 1 of 5",
+    "description": "**Sailing Ship** \n\nSome amazing Sailing Ship 1 of 5",
     "external_url": "https://my-awesome-url.com/",
     "attributes": [
       {
@@ -138,8 +138,8 @@
   {
     "image": "spring-flowers.jpg",
     "animation_url": "",
-    "name": "Spring Flowers",
-    "description": "**Spring Flowers** \n\nSome amazing Spring Flowers",
+    "name": "Spring Flowers 1 of 5",
+    "description": "**Spring Flowers** \n\nSome amazing Spring Flowers 1 of 5",
     "external_url": "https://my-awesome-url.com/",
     "attributes": [
       {
@@ -155,8 +155,688 @@
   {
     "image": "texture.jpg",
     "animation_url": "",
-    "name": "Texture",
-    "description": "**Texture** \n\nSome amazing Texture",
+    "name": "Texture 1 of 5",
+    "description": "**Texture** \n\nSome amazing Texture 1 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  }
+  {
+    "image": "art.jpg",
+    "animation_url": "",
+    "name": "Art 2 of 5",
+    "description": "**Art** \n\nSome amazing art 2 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "city.jpg",
+    "animation_url": "",
+    "name": "City 2 of 5",
+    "description": "**City** \n\nSome amazing city 2 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "digital-art.jpg",
+    "animation_url": "",
+    "name": "Digital Art 2 of 5",
+    "description": "**Digital Art** \n\nSome amazing digital art 2 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "dragon.jpg",
+    "animation_url": "",
+    "name": "Dragon 2 of 5",
+    "description": "**Dragon** \n\nSome amazing dragon 2 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Epic"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "fantasy.jpg",
+    "animation_url": "",
+    "name": "Fantasy 2 of 5",
+    "description": "**Fantasy** \n\nSome amazing fantasy 2 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "ink.jpg",
+    "animation_url": "",
+    "name": "Ink 2 of 5",
+    "description": "**Ink** \n\nSome amazing ink 2 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "poseidon.jpg",
+    "animation_url": "",
+    "name": "Poseidon 2 of 5",
+    "description": "**Poseidon** \n\nSome amazing Poseidon 2 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Legendary"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "sailing-ship.jpg",
+    "animation_url": "",
+    "name": "Sailing Ship 2 of 5",
+    "description": "**Sailing Ship** \n\nSome amazing Sailing Ship 2 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "spring-flowers.jpg",
+    "animation_url": "",
+    "name": "Spring Flowers 2 of 5",
+    "description": "**Spring Flowers** \n\nSome amazing Spring Flowers 2 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Rare"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "texture.jpg",
+    "animation_url": "",
+    "name": "Texture 2 of 5",
+    "description": "**Texture** \n\nSome amazing Texture 2 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "art.jpg",
+    "animation_url": "",
+    "name": "Art 3 of 5",
+    "description": "**Art** \n\nSome amazing art 3 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "city.jpg",
+    "animation_url": "",
+    "name": "City 3 of 5",
+    "description": "**City** \n\nSome amazing city 3 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "digital-art.jpg",
+    "animation_url": "",
+    "name": "Digital Art 3 of 5",
+    "description": "**Digital Art** \n\nSome amazing digital art 3 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "dragon.jpg",
+    "animation_url": "",
+    "name": "Dragon 3 of 5",
+    "description": "**Dragon** \n\nSome amazing dragon 3 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Epic"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "fantasy.jpg",
+    "animation_url": "",
+    "name": "Fantasy 3 of 5",
+    "description": "**Fantasy** \n\nSome amazing fantasy 3 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "ink.jpg",
+    "animation_url": "",
+    "name": "Ink 3 of 5",
+    "description": "**Ink** \n\nSome amazing ink 3 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "poseidon.jpg",
+    "animation_url": "",
+    "name": "Poseidon 3 of 5",
+    "description": "**Poseidon** \n\nSome amazing Poseidon 3 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Legendary"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "sailing-ship.jpg",
+    "animation_url": "",
+    "name": "Sailing Ship 3 of 5",
+    "description": "**Sailing Ship** \n\nSome amazing Sailing Ship 3 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "spring-flowers.jpg",
+    "animation_url": "",
+    "name": "Spring Flowers 3 of 5",
+    "description": "**Spring Flowers** \n\nSome amazing Spring Flowers 3 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Rare"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "texture.jpg",
+    "animation_url": "",
+    "name": "Texture 3 of 5",
+    "description": "**Texture** \n\nSome amazing Texture 3 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "art.jpg",
+    "animation_url": "",
+    "name": "Art 4 of 5",
+    "description": "**Art** \n\nSome amazing art 4 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "city.jpg",
+    "animation_url": "",
+    "name": "City 4 of 5",
+    "description": "**City** \n\nSome amazing city 4 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "digital-art.jpg",
+    "animation_url": "",
+    "name": "Digital Art 4 of 5",
+    "description": "**Digital Art** \n\nSome amazing digital art 4 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "dragon.jpg",
+    "animation_url": "",
+    "name": "Dragon 4 of 5",
+    "description": "**Dragon** \n\nSome amazing dragon 4 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Epic"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "fantasy.jpg",
+    "animation_url": "",
+    "name": "Fantasy 4 of 5",
+    "description": "**Fantasy** \n\nSome amazing fantasy 4 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "ink.jpg",
+    "animation_url": "",
+    "name": "Ink 4 of 5",
+    "description": "**Ink** \n\nSome amazing ink 4 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "poseidon.jpg",
+    "animation_url": "",
+    "name": "Poseidon 4 of 5",
+    "description": "**Poseidon** \n\nSome amazing Poseidon 4 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Legendary"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "sailing-ship.jpg",
+    "animation_url": "",
+    "name": "Sailing Ship 4 of 5",
+    "description": "**Sailing Ship** \n\nSome amazing Sailing Ship 4 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "spring-flowers.jpg",
+    "animation_url": "",
+    "name": "Spring Flowers 4 of 5",
+    "description": "**Spring Flowers** \n\nSome amazing Spring Flowers 4 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Rare"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "texture.jpg",
+    "animation_url": "",
+    "name": "Texture 4 of 5",
+    "description": "**Texture** \n\nSome amazing Texture 4 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "art.jpg",
+    "animation_url": "",
+    "name": "Art 5 of 5",
+    "description": "**Art** \n\nSome amazing art 5 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "city.jpg",
+    "animation_url": "",
+    "name": "City 5 of 5",
+    "description": "**City** \n\nSome amazing city 5 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "digital-art.jpg",
+    "animation_url": "",
+    "name": "Digital Art 5 of 5",
+    "description": "**Digital Art** \n\nSome amazing digital art 5 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "dragon.jpg",
+    "animation_url": "",
+    "name": "Dragon 5 of 5",
+    "description": "**Dragon** \n\nSome amazing dragon 5 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Epic"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "fantasy.jpg",
+    "animation_url": "",
+    "name": "Fantasy 5 of 5",
+    "description": "**Fantasy** \n\nSome amazing fantasy 5 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "ink.jpg",
+    "animation_url": "",
+    "name": "Ink 5 of 5",
+    "description": "**Ink** \n\nSome amazing ink 5 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "poseidon.jpg",
+    "animation_url": "",
+    "name": "Poseidon 5 of 5",
+    "description": "**Poseidon** \n\nSome amazing Poseidon 5 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Legendary"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Mythical"
+      }
+    ]
+  },
+  {
+    "image": "sailing-ship.jpg",
+    "animation_url": "",
+    "name": "Sailing Ship 5 of 5",
+    "description": "**Sailing Ship** \n\nSome amazing Sailing Ship 5 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "spring-flowers.jpg",
+    "animation_url": "",
+    "name": "Spring Flowers 5 of 5",
+    "description": "**Spring Flowers** \n\nSome amazing Spring Flowers 5 of 5",
+    "external_url": "https://my-awesome-url.com/",
+    "attributes": [
+      {
+        "trait_type": "Rarity Class",
+        "value": "Rare"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Art"
+      }
+    ]
+  },
+  {
+    "image": "texture.jpg",
+    "animation_url": "",
+    "name": "Texture 5 of 5",
+    "description": "**Texture** \n\nSome amazing Texture 5 of 5",
     "external_url": "https://my-awesome-url.com/",
     "attributes": [
       {

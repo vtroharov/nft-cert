@@ -54,7 +54,7 @@ contract ContractName000000 is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalti
         uint256 tokenId = _tokenIdCounter.current();
         _exists(tokenId);
         _tokenIdCounter.increment();
-        require(tokenId < 20);
+        /**  require(tokenId < 20); */
         _safeMint(to, tokenId);
 
         if (royaltyValue > 0) {
@@ -65,13 +65,13 @@ contract ContractName000000 is ERC721URIStorage, Ownable, ERC2981PerTokenRoyalti
     }
     /**
     * @dev Mints batch of n number of NFTs to specified address
-    */
+    
     function mintToAddressBatch(address to, string[] memory uri, address royaltyRecipient, uint256 royaltyValue) external onlyOwner {
         for (uint i=0; i < uri.length; i++) {
             safeMint(to, uri[i],royaltyRecipient, royaltyValue);
         }
     }
-
+    */
     /**
     * @dev .
      * _contractURI is for the OpenSea contract level metadata
