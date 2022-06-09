@@ -43,24 +43,24 @@ jobs:
       # PART 2 Create and Verify Contract =========================================
       # Comment this Section if you are using an already created contract
 
-      # - name: Create Contract
-      #   run: |
-      #     # Compile the contract
-      #     npx hardhat compile
-      #     echo "::set-output name=CONTRACT_ADDRESS::$(npx hardhat run ./scripts/deploy.js)"
-      #   env:
-      #     CONTRACT_NAME: ${{ steps.contract_name.outputs.CONTRACT_NAME }}
-      #   id: contract
+      - name: Create Contract
+        run: |
+          # Compile the contract
+          npx hardhat compile
+          echo "::set-output name=CONTRACT_ADDRESS::$(npx hardhat run ./scripts/deploy.js)"
+        env:
+          CONTRACT_NAME: ${{ steps.contract_name.outputs.CONTRACT_NAME }}
+        id: contract
 
-      # - name: Display Contract Address
-      #   run: echo "Contract Address is ${{ steps.contract.outputs.CONTRACT_ADDRESS }}"
+      - name: Display Contract Address
+        run: echo "Contract Address is ${{ steps.contract.outputs.CONTRACT_ADDRESS }}"
 
-      # - name: Sleep for 75s for contract to propagate to the network
-      #   run: sleep 75s
-      #   shell: bash
+      - name: Sleep for 75s for contract to propagate to the network
+        run: sleep 75s
+        shell: bash
 
-      # - name: Verify Contract is Created
-      #   run: npx hardhat verify ${{ steps.contract.outputs.CONTRACT_ADDRESS }}
+      - name: Verify Contract is Created
+        run: npx hardhat verify ${{ steps.contract.outputs.CONTRACT_ADDRESS }}
 
       # PART 2 COMPLETED ==========================================================
       # PART 3 Store NFT Media and Metadata =======================================
@@ -88,9 +88,9 @@ jobs:
         env:
           CONTRACT_NAME: ${{ steps.contract_name.outputs.CONTRACT_NAME }}
           # If you are creating a new contract, uncomment the below line
-          #CONTRACT_ADDRESS: ${{ steps.contract.outputs.CONTRACT_ADDRESS }}
+          CONTRACT_ADDRESS: ${{ steps.contract.outputs.CONTRACT_ADDRESS }}
           # If you are using an already create contract, uncomment the below line
-          CONTRACT_ADDRESS: ${{ secrets.CONTRACT_ADDRESS }}
+          #CONTRACT_ADDRESS: ${{ secrets.CONTRACT_ADDRESS }}
 
       # - name: Batch Minting
       #   run: npx hardhat run --network ${NETWORK} scripts/mint-batch-nft-send.mjs
@@ -112,8 +112,8 @@ jobs:
         run: node scripts/verify-nfts.mjs
         env:
           # If you are creating a new contract, uncomment the below line
-          #CONTRACT_ADDRESS: ${{ steps.contract.outputs.CONTRACT_ADDRESS }}
+          CONTRACT_ADDRESS: ${{ steps.contract.outputs.CONTRACT_ADDRESS }}
           # If you are using an already create contract, uncomment the below line
-          CONTRACT_ADDRESS: ${{ secrets.CONTRACT_ADDRESS }}
+          # CONTRACT_ADDRESS: ${{ secrets.CONTRACT_ADDRESS }}
 
       # PART 5 COMPLETED ==========================================================
